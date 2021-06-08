@@ -33,4 +33,5 @@ jobs:
           ghc-version: ${{ matrix.ghc }}
       - run: git config --global core.autocrlf false
       - uses: actions/checkout@v2
+      - run: git diff
       - uses: ndmitchell/neil@master
